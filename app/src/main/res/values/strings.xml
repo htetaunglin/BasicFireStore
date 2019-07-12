@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Basic Firestore</string>
+    <string name="_0912345678">0912345678</string>
+    <string name="maung_maung">Maung Maung</string>
+    <string name="fill_information">Fill Information</string>
+    <string name="enter_phone_no">Enter Phone No</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="save">Save</string>
 </resources>
