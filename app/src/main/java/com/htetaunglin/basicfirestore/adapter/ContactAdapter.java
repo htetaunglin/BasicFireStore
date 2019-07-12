@@ -28,19 +28,18 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
     @NonNull
     @Override
     public ContactViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return null;
+        return new ContactViewHolder(LayoutInflater.from(context).inflate(R.layout.item, viewGroup, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull final ContactViewHolder contactViewHolder, int i) {
+
+        contactViewHolder.tv_first_letter.setText(String.valueOf(contactList.get(i).getName().charAt(0)).toUpperCase());
         contactViewHolder.tv_name.setText(contactList.get(i).getName());
         contactViewHolder.tv_phone.setText(contactList.get(i).getPhone());
-        contactViewHolder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
+        contactViewHolder.itemView.setOnLongClickListener(view -> {
 
-                return true;
-            }
+            return true;
         });
     }
 
@@ -51,11 +50,13 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
 
     class ContactViewHolder extends RecyclerView.ViewHolder {
 
+        TextView tv_first_letter;
         TextView tv_name;
         TextView tv_phone;
 
         public ContactViewHolder(@NonNull View itemView) {
             super(itemView);
+            tv_first_letter = itemView.findViewById(R.id.first_letter);
             tv_name = itemView.findViewById(R.id.name);
             tv_phone = itemView.findViewById(R.id.phoneno);
         }
