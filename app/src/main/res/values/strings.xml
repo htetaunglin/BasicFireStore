@@ -7,4 +7,6 @@
     <string name="enter_name">Enter Name</string>
     <string name="save">Save</string>
     <string name="m">M</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
 </resources>

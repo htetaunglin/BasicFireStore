@@ -1,11 +1,12 @@
 package com.htetaunglin.basicfirestore.model;
 
 public class Contact {
-    String id;
-    String name;
-    String phone;
+    private String id;
+    private String name;
+    private String phone;
 
-    public Contact(){}
+    public Contact() {
+    }
 
     public Contact(String id, String name, String phone) {
         this.id = id;
