@@ -3,6 +3,6 @@ I developed sample app (Phone contact) by using Firebase firestore database. To 
 
 ### Clone this repository 
 ``` 
-git clone https://github.com/htetaunglin/BasicFireStore.git
+git clone https://github.com/htetaunglin/BasicFireStore.git basicfirestore
 ```
 
